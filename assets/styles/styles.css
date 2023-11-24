@@ -1,0 +1,112 @@
+html {
+    font-size: 16px;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(34, 34, 34);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Caveat', cursive;
+    color:#1e87f0;
+}
+a, p {
+    font-family: 'Open Sans', sans-serif;
+}
+a.anchor {
+    display: block;
+    position: relative;
+    top: -80px;
+    visibility: hidden;
+}
+
+/* HEADER ---------------------------------------------- */
+header {
+    transition: background-color 0.5s ease-in-out;
+}
+header .logo a {
+    font-size: 2.5rem;
+    text-decoration: none;
+    font-family: 'Caveat', cursive;
+    transition: color 0.3s ease-in-out;
+}
+header .logo a:hover {
+    color: #FFFFFF;
+}
+header.uk-sticky-below {
+    background-color: rgb(34, 34, 34);
+}
+header .uk-icon svg {
+    width: 40px;
+    height: 40px;
+}
+@media only screen and (max-width: 959px) {
+    header .logo a {
+        font-size: 2rem;
+    }
+}
+
+/* MAIN ------------------------------------------------ */
+main {
+    position: relative;
+    top: -80px;
+    /*top: 80px;*/
+}
+
+/* HERO ------------------------------------------------ */
+#hero {
+    position: relative;
+}
+#hero-text {
+    z-index: 10;
+}
+#hero-text div {
+    position: relative;
+    top: 0px;
+    background-color: rgba(34, 34, 34, 0.7);
+    border-radius: 5px;
+}
+#hero-text h1{
+    font-size: 2.5rem;
+}
+#hero-text p{
+    color: #FFFFFF;
+}
+
+/* ABOUT ----------------------------------------------- */
+.about {
+    background-color: #FFFFFF;
+}
+.about ul li div {
+    color: #FFFFFF;
+}
+
+/* EVENTS ---------------------------------------------- */
+.events {
+    background-image: url('/assets/images/events/events-bg.jpeg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: calc(100vh - 80px );
+}
+.events .uk-card-media-top {
+    width: 100%;
+    max-height: 200px;
+    overflow: hidden;
+}
+.events .uk-card-media-top img {
+    position: relative;
+    top: -80px;
+    width: 100%;
+    height: auto;
+}
+
+/* FOOTER ---------------------------------------------- */
+footer {
+    background-color: rgb(34, 34, 34);
+}
+footer button {
+    width: 100%;
+}
